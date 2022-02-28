@@ -10,12 +10,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body class="stars">
+<body>
 <div class="flex">
 <h1>ETCH-A-SKETCH</h1>
- <div id= "grid"> 
+
+<form class="center" >
+    <h2><em>Grid Size</em></h2>
+    <p>Number of Rows:   
+        <input type="text" name="rows" maxlength="5" placeholder="ex. 4"/>
+      </p>
+      <p>Number of Columns:
+        <input type="text" name="columns" maxlength="3" placeholder="ex. 4"/>
+      </p>
+      <p>
+        <input type="submit" onclick="makeGrid(); return false;">
+      </p>
+</form>
+
+ <table id= "grid"> 
     
- </div>
+ </table>
 </div>
  <script src="script.js"></script>
 </body>

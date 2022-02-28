@@ -1,13 +1,26 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	outline: silver;
+
+}
+
 body{
-    margin: 0;
+   
     background-color:#f8f8ff;
 	font-family: 'Hubballi', cursive;
+	min-height: 100vh;
+	max-width: 100%;
 }
 
 #grid{
    display: grid;
-   grid-template-columns: repeat(3, 1fr);
-
+   
+   align-content: stretch;
+   justify-content: center;
+   justify-items: center;
+   
    height: 500px;
    width: 400px;
    background-color:white;
@@ -16,6 +29,7 @@ body{
 .flex{
 	height: 100%;
 	width: 100%;
+	gap: 25px;
 	display: flex;
 	flex-direction: column;
 	flex-wrap: nowrap;
@@ -23,4 +37,14 @@ body{
 	justify-content: center;
 }
 
+p{
+	width: 240px;
+}
+
+.center{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
 

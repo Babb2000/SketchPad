@@ -1,7 +1,5 @@
-for(let i = 0; i < 32; i++)
+//Function to call for dynamic sketchpad size
+function makeGrid()
 {
-let container = document.getElementById('grid');
-let cell = document.createElement('div');
-cell.innerHTML = `Div # ${i+1}`;
-container.appendChild(cell);
+    
 }
