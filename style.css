@@ -1,56 +1,26 @@
 body{
     margin: 0;
-    background-color: black;
+    background-color:#f8f8ff;
+	font-family: 'Hubballi', cursive;
 }
 
-/*Imported space background color css code*/
-@import "susy";
-@import "compass/reset";
+#grid{
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
 
-.stars, .twinkling, .clouds {
-	position:absolute;
-	display:block;
-	top:0; bottom:0;
-	left:0; right:0;
-	width:100%; height:100%;
+   height: 500px;
+   width: 400px;
+   background-color:white;
 }
 
-.stars {
-	z-index: 0;
-	background: #000 url('https://image.ibb.co/mjnygo/stars.png') repeat top center;
+.flex{
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	align-items: center;
+	justify-content: center;
 }
 
-.twinkling{
-	z-index: 1;
-	background:transparent url('https://image.ibb.co/ir1DE8/twinkling.png') repeat top center;
-	animation: move-twink-back 200s linear infinite;
-}
 
-.clouds{
-	z-index: 2;
-    background:transparent url('https://image.ibb.co/bT4N7T/clouds.png') repeat top center;
-	animation: move-clouds-back 200s linear infinite;
-}
-
-@keyframes move-twink-back {
-	from {background-position:0 0;}
-	to {background-position:-10000px 5000px;}
-}
-
-@keyframes move-clouds-back {
-	from {background-position:0 0;}
-	to {background-position:10000px 0;}
-}
-/*Imported Css Space background code*/
-
-.container{
-    display: flex;
-    justify-content: center;
-    align-content: center;
-}
-
-#first{
-    border: 5px solid silver;
-    width: 600px;
-    height: 750px;
-}
