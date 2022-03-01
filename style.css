@@ -11,7 +11,7 @@ body{
     background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);;
 	font-family: 'Hubballi', cursive;
 	min-height: 100vh;
-	max-width: 100%;
+	height: 1087px;
 }
 
 #grid{
@@ -21,8 +21,8 @@ body{
    justify-content: center;
    justify-items: center;
    
-   height: 500px;
-   width: 400px;
+   height: 750px;
+   width:  750px;
    background-color:white;
 }
 
@@ -47,4 +47,15 @@ p{
 	justify-content: center;
 	align-items: center;
 }
+
+h1{
+	position: fixed;
+	top: 10px;
+}
+
+h1:hover{
+	font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+
 
