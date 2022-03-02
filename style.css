@@ -16,13 +16,15 @@ body{
 
 #grid{
    display: grid;
-   grid-template-columns: repeat(16, 46.88px);
-   grid-auto-rows: 46.88px;
-  
+   
+   justify-content: end;
+   align-content: stretch;
    
    height: 750px;
    width:  750px;
    background-color:white;
+   box-shadow: 40px 40px 80px rgba(0, 0, 0, 0.1);
+
 }
 
 .flex{
@@ -54,11 +56,13 @@ h1{
 
 div{
 	background-color: white;
-	width: 46.88px;
-	height: 46.88px;
+	/*width: 46.88px;
+	height: 46.88px;*/
 	border: 1px solid black;
 
 }
 
-
+div:hover{
+	background-color: violet;
+}
 

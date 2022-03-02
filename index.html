@@ -9,6 +9,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="script.js"></script>
 </head>
 <body>
 <section class="flex">
@@ -17,22 +18,21 @@
 <form class="center" >
     <h2><em>Grid Size</em></h2>
     <p>Number of Rows:   
-        <input type="number" name="rows" maxlength="5" placeholder="ex. 4"/>
+        <input type="number" name="rows" min="1" maxlength="3" id ="num1" placeholder="ex. 4"/>
       </p>
       <p>Number of Columns:
-        <input type="number" name="columns" maxlength="3" placeholder="ex. 4"/>
+        <input type="number" name="columns" min="1" maxlength="3" id="num2" placeholder="ex. 4"/>
       </p>
       <p>
-        <input type="submit" onclick="makeGrid(); return false;">
+        <button onclick= "makeGrid(); return false;">Submit</button>
       </p>
 </form>
 
+
 <div id= "grid">
 
+
 </div>
-
-
 </section>
- <script src="script.js"></script>
 </body>
 </html>
