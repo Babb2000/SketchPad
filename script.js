@@ -1,20 +1,17 @@
-function makeGrid()
-{
-    let tblr = document.getElementById("grid");
+function makeGrid(){
+    let gridContainer = document.getElementById('grid');
 
-    for(let i = 0; i < 11; i++)
+    for(let i = 0; i < 16; i++)
     {
-        let tblrw = document.createElement('tr');
-        let tblcol = document.createElement('td');
-        
-        tblrw.id = `row + ${i}`;
-        tblr.appendChild(tblrw);
-
-        for(let j = 0; j < 11; j++)
-        {
-            tblrw.appendChild(tblcol);
-        }
-    }
-
     
+    let myRows = document.createElement('div');
+    gridContainer.appendChild(myRows);
+    
+       for(let j = 0; j < 16; j++)
+       {
+         let myCol = document.createElement('div');
+         gridContainer.appendChild(myCol);
+       }
+
+}
 }
