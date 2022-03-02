@@ -16,10 +16,9 @@ body{
 
 #grid{
    display: grid;
-   
-   align-content: stretch;
-   justify-content: center;
-   justify-items: center;
+   grid-template-columns: repeat(16, 46.88px);
+   grid-auto-rows: 46.88px;
+  
    
    height: 750px;
    width:  750px;
@@ -54,10 +53,12 @@ h1{
 }
 
 div{
-	background-color: #e3ffe7;
+	background-color: white;
 	width: 46.88px;
 	height: 46.88px;
 	border: 1px solid black;
+
+	
 
 }
 
