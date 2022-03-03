@@ -11,8 +11,8 @@ hard coded the result into html to wrap my mind around how the grid should look.
 .createElement('div')` to dynamically add div's into the container div. 
 3. When looping through the number of columns I wanted to add to the container I realized that I also had to nest another for-loop within the current loop to add the
 number of rows to the container. This layout and nesting of loops being interdependent of eachother reminded me of 2D-arrays I worked with in C++, ex) `int two_d[10][20]`.
-Not sure if javascript has 2D arrays(didn't learn at time of project), but if they do I will make sure to implement them.
-4.The final functionality that made me spend a little more time on was adding the "hover" effect to the grid layout. I chose to do this by using a javascript event handler
+Not sure if javascript has 2D arrays (didn't learn at time of project), but if they do I will make sure to implement them.
+4. The final functionality that made me spend a little more time on was adding the "hover" effect to the grid layout. I chose to do this by using a javascript event handler
 which was asigned to an anonymous function. I'm still not to sure why the return value of the onclick function has to be set to false, still have to research that more.
 
 ---
