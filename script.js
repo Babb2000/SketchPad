@@ -26,10 +26,12 @@ function makeGrid(){
     let currentDiv = document.getElementById('grid');
     const myDivChildNodes = currentDiv.children;
 
+
     for(let q = 0; q < myDivChildNodes.length; q++)
     {
       myDivChildNodes[q].style.width = `${cssWidth}`;
       myDivChildNodes[q].style.length = `${cssLength}`;
+
     }
 
     for(let i = 0; i < num1; i++)
@@ -43,9 +45,47 @@ function makeGrid(){
          let myCol = document.createElement('div');
          gridContainer.appendChild(myCol);
        }
+    }
+   
 
+    for(let k = 0; k < myDivChildNodes.length; k++)
+    {
+      myDivChildNodes[k].onmouseover=function(){
+        myDivChildNodes[k].style.background = "black";
       }
+    }
+    
 }
+
+function limeGrid(){
+    let currentDiv = document.getElementById('grid');
+    const myDivChildNodes = currentDiv.children;
+
+    for(let i = 0; i < myDivChildNodes.length; i++)
+    {
+      myDivChildNodes[i].onmouseover=function(){
+        myDivChildNodes[i].style.background = "lime";
+      }
+    }
+
+}
+
+function aquaGrid(){
+  let currentDiv = document.getElementById('grid');
+  const myDivChildNodes = currentDiv.children;
+
+  for(let i = 0; i < myDivChildNodes.length; i++)
+  {
+    myDivChildNodes[i].onmouseover=function(){
+      myDivChildNodes[i].style.background = "aqua";
+    }
+  }
+
+}
+
+
+
+
 
 
 

@@ -56,13 +56,23 @@ h1{
 
 div{
 	background-color: white;
-	/*width: 46.88px;
-	height: 46.88px;*/
 	border: 1px solid black;
 
 }
 
-div:hover{
-	background-color: violet;
+button{
+	 width: 143px;
+	 height: 19.5px;
 }
+
+
+#lime:hover{
+	background-color: lime;
+}
+
+#aqua:hover{
+	background-color: aqua;
+}
+
+
 
